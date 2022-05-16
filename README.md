@@ -1,7 +1,6 @@
 # VetClinic
 
 
-https://user-images.githubusercontent.com/81091010/168667254-213d230e-f0df-4c0c-bfcc-56d76fb420c7.mov
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
