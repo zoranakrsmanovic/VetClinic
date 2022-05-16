@@ -1,0 +1,43 @@
+<div fxLayout="column" fxLayoutAlign="space-between center" >
+    <div>
+        <h2 style="text-align: center; margin-bottom: 20px; margin-top: 20px;">Examination Form</h2>
+    
+    
+    <form  fxLayout="column" (ngSubmit) = "onSubmit()"  >
+    
+        <div class="form-group" fxFLex="50">
+          <label for="formGroupExampleInput">Date</label>
+          <input type="date" class="form-control" id="dateOfExamination" [(ngModel)] = "examination.dateOfExamination" name = "dateOfExamination" placeholder="Name..">
+        </div>
+    
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Diagnosis</label>
+          <input type="text" class="form-control" id="diagnosis" [(ngModel)] = "examination.diagnosis"  name="diagnosis" placeholder="Diagnosis">
+        </div>
+    
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Type of examination</label>
+            <input type="text" class="form-control" id="type" [(ngModel)] = "examination.type"  name="type" placeholder="Type">
+          </div>
+    
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Treatment</label>
+            <textarea type="text" class="form-control" id="treatment" name="treatment" [(ngModel)] = "examination.treatment"  placeholder="Treatment"></textarea>
+          </div>
+    
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Total Sum</label>
+            <input type="text" class="form-control" id="sum" [(ngModel)] = "examination.sum"  name="sum" placeholder="Total Sum">
+          </div>
+    
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Payed</label>
+            <input type="text" class="form-control" id="payed" [(ngModel)] = "examination.payed"  name="payed" placeholder="Payed">
+          </div>
+    
+          <button type="submit" class="btn btn-primary" style="margin-top: 10px;background-color:  rgb(60, 206, 211); border: none;">Submit</button>
+    
+      </form>
+    </div>
+    </div>
+    

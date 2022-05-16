@@ -1,0 +1,89 @@
+#ids{
+    display: none;
+}
+
+#pets{
+   
+border: none;
+background-color: transparent;
+color: rgb(60, 206, 211);
+}
+
+#pets:hover{
+    color: black;
+}
+
+.custom-pagination .paginator-nav-btns {
+    margin: 0px 10px;
+    font-weight: bold;
+    background-color: black;
+    -webkit-box-shadow: 3px 5px 24px 0px #222222; 
+    box-shadow: 3px 5px 24px 0px #222222;
+   
+  }
+  
+  .custom-pagination > div.current {
+    background-color: rgba(0, 0, 0, 0.884);
+    -webkit-box-shadow: 3px 5px 24px 0px #222222; 
+    box-shadow: 3px 5px 24px 0px #222222;
+  }
+  
+  .custom-pagination > div {
+    border: 2px solid rgba(0, 0, 0, 0.844);
+    margin-right: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    font-size: 18px;
+    text-align: center;
+    color: antiquewhite;
+    background-color: black;
+    -webkit-box-shadow: 3px 5px 24px 0px #222222; 
+    box-shadow: 3px 5px 24px 0px #222222;
+    
+    
+  }
+  
+  .custom-pagination {
+    display: flex;
+    max-width: 300px;
+    margin: auto;
+
+    
+  }
+
+  table{
+    -webkit-box-shadow: 3px 5px 24px 0px #444444; 
+    box-shadow: 3px 5px 24px 0px #444444;
+ 
+    font-family: 'Raleway', sans-serif; font-weight: 600;
+    
+  }
+  .btn-danger{
+      background-color: transparent;
+      border: none;
+      color: #c43333
+  }
+  .btn-danger:hover{
+      color: black;
+
+  }
+
+  .btn-warning{
+      background-color: transparent;
+      border: none;
+      color:rgb(219, 178, 41);
+  }
+  .btn-warning:hover{
+      color: black;
+  }
+
+  th{
+      color: aliceblue;
+     
+  }
+  .top{
+      background-color: black;
+      background: rgb(60, 206, 211);
+    
+  }

@@ -1,0 +1,13 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+#logoutb{
+    padding: 0;
+    -webkit-box-shadow: 7px 4px 35px 0px rgba(99,110,110,1);
+    -moz-box-shadow: 7px 4px 35px 0px rgba(99,110,110,1);
+    box-shadow: 7px 4px 35px 0px rgba(99,110,110,1);
+
+  
+}
+#logoutb a{
+    color: aliceblue;
+  
+}

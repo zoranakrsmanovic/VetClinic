@@ -1,0 +1,47 @@
+<div fxLayout="column" fxLayoutAlign="space-between center" style="margin: 40px;">
+  <div>
+    <h2 style="text-align: center; margin-bottom: 20px; margin-top: 20px;">Update pet</h2>
+
+
+    <form fxLayout="column" (ngSubmit)="onSubmit()">
+
+      <div class="form-group" fxFLex="50">
+        <label for="formGroupExampleInput">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="pet.name" name="name" placeholder="Name..">
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Species</label>
+        <input type="text" class="form-control" id="type" [(ngModel)]="pet.type" name="type"
+          placeholder="Species">
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Breed</label>
+        <input type="text" class="form-control" id="breed" [(ngModel)]="pet.breed" name="breed" placeholder="Breed">
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Age</label>
+        <input type="text" class="form-control" id="age" [(ngModel)]="pet.age" name="age"
+          placeholder="Age">
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Weight</label>
+        <input type="text" class="form-control" id="weight" name="weight" [(ngModel)]="pet.weight" placeholder="Weight">
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Alergies</label>
+        <input type="text" class="form-control" id="alergies" [(ngModel)]="pet.alergies" name="alergies"
+          placeholder="Alergies">
+      </div>
+
+    
+
+      <button type="submit" class="btn btn-info" style="margin-top: 10px; background-color:  rgb(60, 206, 211);">Submit</button>
+
+    </form>
+  </div>
+</div>

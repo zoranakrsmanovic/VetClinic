@@ -1,0 +1,83 @@
+<div style="float: left; margin-top: 30px;  width: 50%; align-content: center;">
+
+  <div *ngIf="empty" fxLayoutAlign="center center" style=" height: 70vh; font-family: Arial, Helvetica, sans-serif;"><h4 >This client has no pets, add pet =></h4>  </div>
+
+  <div class="list-group" *ngFor="let pet of record" style=" margin: 10px 10px 10px 30px;">
+    <div href="#" class="list-group-item list-group-item-action flex-column align-items-center ">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1" style="text-align: center; margin: 30px;">{{pet.name}} </h5>
+
+
+        <button style="padding: 10px;background-color: transparent;color: brown;border: none;" type="button"
+          class="btn btn-danger" (click)="deletePet(pet.id)" id="obrisi">
+          <mat-icon style="font-weight: 900;">clear</mat-icon>
+        </button>
+
+        <small style="display: none;" id="ids">{{pet.id}}</small>
+
+      </div>
+      <small> Breed: {{pet.breed}}</small><br>
+      <small>Age: {{pet.age}} y/o</small><br>
+      <small>Weight: {{pet.weight}} kg</small><br>
+      <small>Allergies: {{pet.alergies}}</small><br>
+      <a href="#" routerLink="/records/{{pet.id}}"><button style="float: right;border: none;" id="button"
+          class="btn btn-outline-info" (click)="getPetId(pet.id)">
+          <mat-icon>description</mat-icon>
+        </button></a>
+      </div>
+
+
+    <button type="button" class="btn btn-info" (click)="editPet(pet.id)" id="edit">
+      <mat-icon>mode_edit</mat-icon>
+    </button>
+
+
+  </div>
+</div>
+
+
+<div fxLayout="column" fxLayoutAlign="space-between end" style="margin: 40px;">
+  <div>
+    <h2 style="text-align: center; margin-bottom: 20px; margin-top: 20px;">Add pet</h2>
+
+
+    <form fxLayout="column" (ngSubmit)="onSubmit()">
+
+      <div class="form-group" fxFLex="50">
+        <label for="formGroupExampleInput">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="pet.name" name="name" placeholder="Name..">
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Species</label>
+        <input type="text" class="form-control" id="type" [(ngModel)]="pet.type" name="type" placeholder="Species">
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Breed</label>
+        <input type="text" class="form-control" id="breed" [(ngModel)]="pet.breed" name="breed" placeholder="Breed">
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Age</label>
+        <input type="text" class="form-control" id="age" [(ngModel)]="pet.age" name="age" placeholder="Age">
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Weight</label>
+        <input type="text" class="form-control" id="weight" name="weight" [(ngModel)]="pet.weight" placeholder="Weight">
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Allergies</label>
+        <input type="text" class="form-control" id="alergies" [(ngModel)]="pet.alergies" name="alergies"
+          placeholder="Alergies">
+      </div>
+
+
+
+      <button type="submit" class="btn btn-info" style="margin-top: 10px;">Submit</button>
+
+    </form>
+  </div>
+</div>

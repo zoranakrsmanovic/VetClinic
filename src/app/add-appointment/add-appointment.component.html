@@ -1,0 +1,30 @@
+<h2 style="text-align: center; margin: 40px;">Add appointment</h2>
+<form fxLayout="column" fxLayoutAlign="center center"   (ngSubmit) = "onSubmit()">
+    <div class="form-row">
+      <div class="form-group col-md-9">
+        <label for="inputEmail4">Name</label>
+        <input type="text" class="form-control" id="name"  [(ngModel)] = "appointment.name" name = "name" placeholder="Client name">
+      </div>
+      <div class="form-group col-md-9">
+        <label for="inputEmail4">Last name</label>
+        <input type="text" class="form-control" id="lastName"  [(ngModel)] = "appointment.lastName" name = "lastName" placeholder="Last name">
+      </div>
+      <div class="form-group col-md-9">
+        <label for="inputPassword4">Pet name</label>
+        <input type="text" class="form-control" id="pet"  [(ngModel)] = "appointment.pet" name = "pet" placeholder="Pet name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Date</label>
+      <input type="text" class="form-control" id="date"  [(ngModel)] = "appointment.date" name = "date" placeholder="yyyy-MM-dd">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Time - hrs</label>
+      <input type="text" class="form-control" id="hrs"  [(ngModel)] = "appointment.hrs" name = "hrs" placeholder="e.g 9.45">
+    </div>
+   
+     
+   
+    
+    <button style="width: 200px; margin-top: 30px; background-color:  rgb(60, 206, 211); border: none;" type="submit"  class="btn btn-primary">Add appointment</button>
+  </form>

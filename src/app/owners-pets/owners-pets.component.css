@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&family=Zen+Kaku+Gothic+Antique&display=swap');
+
+
+
+.list-group{
+    -webkit-box-shadow: 0px 10px 13px -7px #000000c4, -5px 10px 33px 7px rgba(0,0,0,0.44); 
+    box-shadow: 0px 10px 13px -7px #000000c4, -5px 10px 33px 7px rgba(0,0,0,0.44);
+    border-top-right-radius: 30px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 500;
+    
+    
+}
+
+
+.btn-info:hover{
+    color: rgb(60, 206, 211);
+    background-color: #41494dde;
+}
+
+#add{
+    width: 20%;
+ 
+}
+form{
+    width: 50%;
+    padding: 15px;
+}
+#space{
+    height: 30px;
+}
+
+form{
+    width: 600px;
+}
+.form-group{
+    margin: 2px;
+}
+.btn-info{
+    background-color: rgb(60, 206, 211);
+    border: none;
+    border-radius: 0;
+}
+.btn-outline-info{
+    border-radius: 0;
+    border: 1px solid rgb(60, 206, 211);
+}
+.btn-outline-info:hover{
+    background-color:rgb(60, 206, 211) ;
+    color: #41494dde;
+}
+
+#button mat-icon{
+    font-size: 40px;
+}
+#button:hover{
+    background-color: transparent;
+
+}
+small{
+    margin-left: 30px;
+}
+h5{
+    font-weight: 700;
+}
